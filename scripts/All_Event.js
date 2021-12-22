@@ -13318,9 +13318,9 @@ const tokenContract = web3.eth.contract(
     );
 
 tokenContract.getPastEvents(
-  'AllEvents'
+  'AllEvents',
   {fromBlock:0 , step:0},
   (err,events) => { console.log(events) }
-)
+);
 
 init();
